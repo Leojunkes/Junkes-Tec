@@ -9,12 +9,12 @@ import {
   Text,
   Box,
 } from "@chakra-ui/react";
-
+import Link from "next/link";
 const Header = () => {
   return (
-    <Flex >
-      <Image  m="30px 0 0 150px" w="6rem" src="/imagens/logoLeo.png" /> 
-   
+    <Flex>
+      <Image m="30px 0 0 150px" w="6rem" src="/imagens/logoLeo.png" />
+
       <Box
         m="30px 30px 0 0"
         display="flex"
@@ -24,10 +24,19 @@ const Header = () => {
       >
         <Tabs variant="line" colorScheme="orange">
           <TabList>
+            <Link href='#home'>
             <Tab _focus="none">Home</Tab>
-            <Tab _focus="none">Sobre</Tab>
-            <Tab _focus="none">Projetos</Tab>
-            <Tab _focus="none">Contato</Tab>
+            </Link>
+            
+            <Link href="#sobre">
+              <Tab _focus="none">Sobre</Tab>
+            </Link>
+            <Link href="#projetos">
+              <Tab _focus="none">Projetos</Tab>
+            </Link>
+            <Link href='#contato'>
+              <Tab _focus="none">Contato</Tab>
+            </Link>
           </TabList>
         </Tabs>
       </Box>

@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Template-Next-React</title>
+        <title>Junkes | Tec</title>
       </Head>
       <Content/>
     </>
