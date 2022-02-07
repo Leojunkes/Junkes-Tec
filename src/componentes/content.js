@@ -7,15 +7,26 @@ import {
   Text,
   HStack,
   VStack,
-  TagLabel,
   Divider,
+  Button,
 } from "@chakra-ui/react";
-import { BsGithub, BsLinkedin, BsWhatsapp } from "react-icons/bs";
+import {
+  BsGithub,
+  BsLinkedin,
+  BsWhatsapp,
+  BsTriangleFill,
+} from "react-icons/bs";
+import Link from "next/link";
 
 const Content = () => {
   return (
     <>
-      <Grid id='home' alignItems="center" templateColumns="repeat(3,1fr)" gap={6}>
+      <Grid
+        id="home"
+        alignItems="center"
+        templateColumns="repeat(3,1fr)"
+        gap={6}
+      >
         <GridItem m="0 auto" lineHeight="45px">
           <Text fontSize="3rem">Leonardo</Text>
           <Text fontSize="3rem">Junkes</Text>
@@ -29,7 +40,77 @@ const Content = () => {
           </Box>
         </GridItem>
         <GridItem h="25rem" w="25rem">
-          <Image w='25rem'h='25rem' src="/imagens/leco2.png" />
+          <Image w="600px" src="/imagens/leoSerio.png" />
+          <Flex m="-30px 0 0 0" textAlign="center" justifyContent="center">
+            <HStack>
+              <Box
+                bg="blackAlpha.700"
+                lineHeight="50px"
+                w="8rem"
+                h="8rem"
+                borderRadius="9px"
+              >
+                <Image
+                  objectFit="cover"
+                  boxSize="120px"
+                  src="imagens/java.png"
+                />
+              </Box>
+              <Box
+                bg="blackAlpha.700"
+                lineHeight="50px"
+                w="8rem"
+                h="8rem"
+                borderRadius="9px"
+              >
+                <Image
+                  objectFit="cover"
+                  boxSize="120px"
+                  src="/imagens/react.png"
+                />
+              </Box>
+              <Box bg="blackAlpha.700"
+                lineHeight="50px"
+                w="8rem"
+                h="8rem"
+                borderRadius="9px">
+                <Image src="/imagens/next.png" />
+              </Box>
+              <Box bg="blackAlpha.700"
+                lineHeight="50px"
+                w="8rem"
+                h="8rem"
+                borderRadius="9px">
+                <Image
+                  objectFit="cover"
+                  boxSize="120px"
+                  src="/imagens/chakra.png"
+                />
+              </Box>
+              <Box bg="blackAlpha.700"
+                lineHeight="50px"
+                w="8rem"
+                h="8rem"
+                borderRadius="9px">
+                <Image
+                  objectFit="cover"
+                  boxSize="120px"
+                  src="/imagens/css.png"
+                />
+              </Box>
+              <Box bg="blackAlpha.700"
+                lineHeight="50px"
+                w="8rem"
+                h="8rem"
+                borderRadius="9px">
+                <Image
+                  objectFit="cover"
+                  boxSize="120px"
+                  src="/imagens/figma.png"
+                />
+              </Box>
+            </HStack>
+          </Flex>
         </GridItem>
         <GridItem>
           <section>
@@ -41,30 +122,7 @@ const Content = () => {
           </section>
         </GridItem>
       </Grid>
-
       {/*Tecnologias que atuo*/}
-      <Flex m="5px 0 0 10px" textAlign="center" justifyContent="center">
-        <HStack>
-          <Box lineHeight="50px" w="6rem" h="4rem" border="1px solid">
-            Javascript
-          </Box>
-          <Box lineHeight="50px" w="6rem" h="4rem" border="1px solid">
-            React-js
-          </Box>
-          <Box lineHeight="50px" w="6rem" h="4rem" border="1px solid">
-            Next-js
-          </Box>
-          <Box lineHeight="50px" w="6rem" h="4rem" border="1px solid">
-            Chakra-ui
-          </Box>
-          <Box lineHeight="50px" w="6rem" h="4rem" border="1px solid">
-            CSS
-          </Box>
-          <Box lineHeight="50px" w="6rem" h="4rem" border="1px solid">
-            FIGMA
-          </Box>
-        </HStack>
-      </Flex>
       {/*Fim Tecnologia que atuo*/}
       <Divider w="80%" m="130px auto" />
       <Flex id="sobre" mt="100px" alignItems="center" justifyContent="center">
@@ -76,7 +134,6 @@ const Content = () => {
           Sobre
         </Text>
       </Flex>
-
       <Grid
         m="35px 0 0 100px"
         alignItems="center"
@@ -91,7 +148,11 @@ const Content = () => {
           de controle financeiro,tabelas de cadastro, entre outros, sempre
           praticando e estudando para entregar o melhor para meus clientes.
         </section>
-        <Image border='2px solid #f95106 ' borderRadius='80px' src="https://leo-portfolio.vercel.app/imagens/leoFoto.png" />
+        <Image
+          border="2px solid #f95106 "
+          borderRadius="80px"
+          src="https://leo-portfolio.vercel.app/imagens/leoFoto.png"
+        />
       </Grid>
       <Flex mt="60px" flexDirection="column">
         <VStack spacing={8} ml="100px" align="start">
@@ -126,8 +187,21 @@ const Content = () => {
           </Box>
         </VStack>
       </Flex>
-      <Divider w="80%" m="130px auto" />
+      <Link href="#home">
+        <Button
+          bg="#f95106"
+          borderRadius="full"
+          type="button"
+          position="absolute"
+          right="30px"
+          color="gray.900"
+          _hover={{ bg: "orange.400" }}
+        >
+          <BsTriangleFill style={{ fontSize: "16px" }} />
+        </Button>
+      </Link>
 
+      <Divider w="80%" m="130px auto" />
       <Flex
         id="projetos"
         mt="100px"
@@ -146,15 +220,16 @@ const Content = () => {
         alignItems="center"
         justifyContent="center"
         m="50px 0 0 30px"
-        templateColumns="repeat(4,1fr)"
+        templateColumns="repeat(5,1fr)"
+        overflowX=""
         gap={6}
       >
         <Box>
           <Image
             objectFit="cover"
             alt="Br_desafio"
-            w="18rem"
-            h="12rem"
+            w="14rem"
+            h="10rem"
             src="/imagens/brDesafio.png"
             borderRadius="8px"
           />
@@ -164,8 +239,8 @@ const Content = () => {
         <Box>
           <Image
             objectFit="cover"
-            w="18rem"
-            h="14rem"
+            w="14rem"
+            h="10rem"
             src="/imagens/junkesLista.png"
             borderRadius="8px"
           />
@@ -175,16 +250,18 @@ const Content = () => {
           <Image
             borderRadius="8px"
             objectFit="cover"
-            w="18rem"
-            src="/imagens/conversor.png"
+            w="14rem"
+            h="10rem"
+            src="/imagens/motoCalc1.png"
           />
-          <Text>Conversor</Text>
+          <Text>Motora-Calc</Text>
         </Box>
+
         <Box>
           <Image
             alt="gall-store"
             objectFit="cover"
-            w="18rem"
+            w="14rem"
             src="/imagens/gall-Store.png"
             borderRadius="8px"
           />
@@ -194,22 +271,26 @@ const Content = () => {
           <Image
             alt="doceria-Mel"
             objectFit="cover"
-            w="18rem"
+            w="14rem"
             src="/imagens/doceriaMel.png"
             borderRadius="8px"
           />
           <Text>site-Doceria-da-Mel</Text>
         </Box>
-        <Box>
-          <Image
-            borderRadius="8px"
-            objectFit="cover"
-            w="14rem"
-            src="/imagens/motoCalc1.png"
-          />
-          <Text>Motora-Calc</Text>
-        </Box>
       </Grid>
+      <Link href="#home">
+        <Button
+          bg="#f95106"
+          borderRadius="full"
+          type="button"
+          position="absolute"
+          right="50px"
+          _hover={{ bg: "orange.400" }}
+          color="gray.900"
+        >
+          <BsTriangleFill style={{ fontSize: "16px" }} />
+        </Button>
+      </Link>
       <Divider w="80%" m="130px auto" />
       <Flex
         flexDirection="column"
@@ -224,12 +305,11 @@ const Content = () => {
           borderBottom="1px solid"
           borderBottomColor="#f95106"
           fontSize="2xl"
-          
         >
           Contato
         </Text>
         <Flex color="#f95106" mt="40px">
-          <HStack fontSize='20px' spacing={4}>
+          <HStack fontSize="20px" spacing={4}>
             <BsLinkedin />
             <BsGithub />
             <BsWhatsapp />

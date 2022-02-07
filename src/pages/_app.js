@@ -1,4 +1,5 @@
 import { ChakraProvider } from "@chakra-ui/react";
+import Footer from "../componentes/Footer/footer";
 import Header from "../componentes/Header/header";
 import "../styles/globals.css";
 import { theme } from "../styles/theme";
@@ -6,8 +7,10 @@ import { theme } from "../styles/theme";
 function MyApp({ Component, pageProps }) {
   return (
     <ChakraProvider theme={theme}>
+      
       <Header />
       <Component {...pageProps} />
+      
     </ChakraProvider>
   );
 }

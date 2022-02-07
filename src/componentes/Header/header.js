@@ -20,21 +20,21 @@ const Header = () => {
         display="flex"
         justifyContent="flex-end"
         w="100%"
-        bg="#1b252b"
+        bg="#171923"
       >
         <Tabs variant="line" colorScheme="orange">
           <TabList>
-            <Link href='#home'>
-            <Tab _focus="none">Home</Tab>
+            <Link href="#home">
+              <Tab _focus="none">Home</Tab>
             </Link>
-            
+
             <Link href="#sobre">
               <Tab _focus="none">Sobre</Tab>
             </Link>
             <Link href="#projetos">
               <Tab _focus="none">Projetos</Tab>
             </Link>
-            <Link href='#contato'>
+            <Link href="#contato">
               <Tab _focus="none">Contato</Tab>
             </Link>
           </TabList>
