@@ -41,9 +41,33 @@
     font-size: 75.5%;
   }
 }
-@media (max-width: 380px) {
+@media (max-width: 410px) {
   html {
     font-size: 55.5%;
+  }
+}
+@media (max-width: 800px) {
+  html {
+    font-size: 41.5%;
+  }
+  #containerGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  #boxTecnologies {
+    margin: 0px 190px 0 -5px;
+    padding-left: -15px;
+  }
+  #apresentation1 {
+    margin: 80px 0 0 50px;
+    font-size: 12px;
+    width: 150%;
+  }
+  #Work {
+    line-height: 35px;
+  }
+  #name {
+    line-height: 20px;
   }
 }
 

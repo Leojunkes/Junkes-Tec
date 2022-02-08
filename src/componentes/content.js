@@ -22,15 +22,23 @@ const Content = () => {
   return (
     <>
       <Grid
-        id="home"
+        id="containerGrid"
         alignItems="center"
         templateColumns="repeat(3,1fr)"
         gap={6}
       >
         <GridItem m="0 auto" lineHeight="45px">
-          <Text fontSize="3rem">Leonardo</Text>
-          <Text fontSize="3rem">Junkes</Text>
-          <Box flexDirection="column" lineHeight="55px" display="flex">
+          <Box id="name">
+            <Text fontSize="3rem">Leonardo</Text>
+            <Text fontSize="3rem">Junkes</Text>
+          </Box>
+
+          <Box
+            id="Work"
+            flexDirection="column"
+            lineHeight="55px"
+            display="flex"
+          >
             <Text fontSize="1.7rem" color="#f95106">
               Desenvolvedor
             </Text>
@@ -41,19 +49,26 @@ const Content = () => {
         </GridItem>
         <GridItem h="25rem" w="25rem">
           <Image w="600px" src="/imagens/leoSerio.png" />
-          <Flex m="-30px 0 0 0" textAlign="center" justifyContent="center">
-            <HStack>
+          <Flex
+            id="boxTecnologies"
+            m="-30px 0 0 0"
+            textAlign="center"
+            justifyContent="center"
+          >
+            <HStack textAlign="center" justifyContent="center">
               <Box
                 bg="blackAlpha.700"
                 lineHeight="50px"
                 w="8rem"
                 h="8rem"
                 borderRadius="9px"
+                opacity="0.7"
               >
                 <Image
                   objectFit="cover"
                   boxSize="120px"
                   src="imagens/java.png"
+                  h="8rem"
                 />
               </Box>
               <Box
@@ -62,58 +77,78 @@ const Content = () => {
                 w="8rem"
                 h="8rem"
                 borderRadius="9px"
+                opacity="0.7"
+              >
+                <Image
+                  mt="-10px"
+                  objectFit="cover"
+                  h="10rem"
+                  src="/imagens/react.png"
+                />
+              </Box>
+              <Box
+                bg="blackAlpha.700"
+                lineHeight="50px"
+                w="8rem"
+                h="8rem"
+                borderRadius="9px"
+                opacity="0.7"
+              >
+                <Image src="/imagens/next.png" />
+              </Box>
+              <Box
+                bg="blackAlpha.700"
+                lineHeight="50px"
+                w="8rem"
+                h="8rem"
+                borderRadius="9px"
+                opacity="0.7"
               >
                 <Image
                   objectFit="cover"
                   boxSize="120px"
-                  src="/imagens/react.png"
-                />
-              </Box>
-              <Box bg="blackAlpha.700"
-                lineHeight="50px"
-                w="8rem"
-                h="8rem"
-                borderRadius="9px">
-                <Image src="/imagens/next.png" />
-              </Box>
-              <Box bg="blackAlpha.700"
-                lineHeight="50px"
-                w="8rem"
-                h="8rem"
-                borderRadius="9px">
-                <Image
-                  objectFit="cover"
-                  boxSize="120px"
                   src="/imagens/chakra.png"
+                  h="11rem"
+                  mt="-14px"
                 />
               </Box>
-              <Box bg="blackAlpha.700"
+              <Box
+                bg="blackAlpha.700"
                 lineHeight="50px"
                 w="8rem"
                 h="8rem"
-                borderRadius="9px">
+                borderRadius="9px"
+                opacity="0.7"
+              >
                 <Image
                   objectFit="cover"
                   boxSize="120px"
                   src="/imagens/css.png"
+                  w="8rem"
+                  h="8rem"
                 />
               </Box>
-              <Box bg="blackAlpha.700"
+              <Box
+                bg="blackAlpha.700"
                 lineHeight="50px"
                 w="8rem"
                 h="8rem"
-                borderRadius="9px">
+                borderRadius="9px"
+                opacity="0.7"
+              >
                 <Image
                   objectFit="cover"
                   boxSize="120px"
                   src="/imagens/figma.png"
+                  h="10rem"
+                  mt="-14px"
                 />
               </Box>
             </HStack>
           </Flex>
         </GridItem>
         <GridItem>
-          <section>
+          <section id="apresentation1">
             Desenvolvedor Web, Estudante de programação, estudei Administração,
             realizei alguns cursos na Udemy, cursando TI na Rocketseat. Não
             utilizo ferramentas com template pronto, construo do zero, começo
@@ -187,7 +222,7 @@ const Content = () => {
           </Box>
         </VStack>
       </Flex>
-      <Link href="#home">
+      <Link href="#containerGrid">
         <Button
           bg="#f95106"
           borderRadius="full"
@@ -278,7 +313,7 @@ const Content = () => {
           <Text>site-Doceria-da-Mel</Text>
         </Box>
       </Grid>
-      <Link href="#home">
+      <Link href="#containerGrid">
         <Button
           bg="#f95106"
           borderRadius="full"

@@ -28,7 +28,7 @@ const Header = () => {
               <Tab _focus="none">Home</Tab>
             </Link>
 
-            <Link href="#sobre">
+            <Link   href="#sobre">
               <Tab _focus="none">Sobre</Tab>
             </Link>
             <Link href="#projetos">
