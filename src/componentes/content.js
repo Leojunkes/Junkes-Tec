@@ -48,7 +48,7 @@ const Content = () => {
           </Box>
         </GridItem>
         <GridItem h="25rem" w="25rem">
-          <Image w="600px" src="/imagens/leoSerio.png" />
+          <Image w="37rem" src="/imagens/leoSerio.png" />
           <Flex
             id="boxTecnologies"
             m="-30px 0 0 0"
@@ -174,6 +174,7 @@ const Content = () => {
         alignItems="center"
         templateColumns="repeat(2,1fr)"
         gap="6"
+        id='aboutMe'
       >
         <section>
           Olá sou Leonardo Junkes, estudo e desenvolvo fazem mais de 3
@@ -187,9 +188,11 @@ const Content = () => {
           border="2px solid #f95106 "
           borderRadius="80px"
           src="https://leo-portfolio.vercel.app/imagens/leoFoto.png"
+          w='17rem'
+          id='photoLeo'
         />
       </Grid>
-      <Flex mt="60px" flexDirection="column">
+      <Flex  id='missionLeo' mt="60px" flexDirection="column">
         <VStack spacing={8} ml="100px" align="start">
           <Box display="flex">
             <HStack spacing={8}>
@@ -258,6 +261,7 @@ const Content = () => {
         templateColumns="repeat(5,1fr)"
         overflowX=""
         gap={6}
+        id='projects'
       >
         <Box>
           <Image

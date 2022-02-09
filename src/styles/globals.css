@@ -33,10 +33,10 @@
 }
 @media (max-width: 600px) {
   html {
-    font-size: 81.5%;
+    font-size: 80.5%;
   }
 }
-@media (max-width: 480px) {
+/*@media (max-width: 480px) {
   html {
     font-size: 75.5%;
   }
@@ -45,10 +45,10 @@
   html {
     font-size: 55.5%;
   }
-}
-@media (max-width: 800px) {
+}*/
+@media (max-width: 480px) {
   html {
-    font-size: 41.5%;
+    font-size: 42.5%;
   }
   #containerGrid {
     display: grid;
@@ -68,6 +68,25 @@
   }
   #name {
     line-height: 20px;
+  }
+  #aboutMe {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    font-size: 12px;
+    width: 80%;
+    margin-left: 50px;
+    
+  }
+  #photoLeo{
+    margin: 15px 0 0 95px
+  }
+  #missionLeo{
+    margin-left: -60px;
+    font-size: 12px;
+  }
+  #projects{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
