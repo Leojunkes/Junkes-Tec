@@ -159,12 +159,18 @@ const Content = () => {
       </Grid>
       {/*Tecnologias que atuo*/}
       {/*Fim Tecnologia que atuo*/}
-      <Divider w="80%" m="130px auto" />
-      <Flex id="sobre" mt="100px" alignItems="center" justifyContent="center">
+      <Divider id="divider" w="80%" m="130px auto" />
+      <Flex
+        id="sobreTodo"
+        mt="100px"
+        alignItems="center"
+        justifyContent="center"
+      >
         <Text
           borderBottom="1px solid"
           borderBottomColor="#f95106"
           fontSize="2xl"
+          id="sobre"
         >
           Sobre
         </Text>
@@ -174,7 +180,7 @@ const Content = () => {
         alignItems="center"
         templateColumns="repeat(2,1fr)"
         gap="6"
-        id='aboutMe'
+        id="aboutMe"
       >
         <section>
           Olá sou Leonardo Junkes, estudo e desenvolvo fazem mais de 3
@@ -188,11 +194,11 @@ const Content = () => {
           border="2px solid #f95106 "
           borderRadius="80px"
           src="https://leo-portfolio.vercel.app/imagens/leoFoto.png"
-          w='17rem'
-          id='photoLeo'
+          w="17rem"
+          id="photoLeo"
         />
       </Grid>
-      <Flex  id='missionLeo' mt="60px" flexDirection="column">
+      <Flex id="missionLeo" mt="60px" flexDirection="column">
         <VStack spacing={8} ml="100px" align="start">
           <Box display="flex">
             <HStack spacing={8}>
@@ -250,6 +256,7 @@ const Content = () => {
           borderBottom="1px solid"
           borderBottomColor="#f95106"
           fontSize="2xl"
+          id="projetos"
         >
           Projetos
         </Text>
@@ -261,7 +268,7 @@ const Content = () => {
         templateColumns="repeat(5,1fr)"
         overflowX=""
         gap={6}
-        id='projects'
+        id="projects"
       >
         <Box>
           <Image
@@ -344,6 +351,7 @@ const Content = () => {
           borderBottom="1px solid"
           borderBottomColor="#f95106"
           fontSize="2xl"
+          id="contato"
         >
           Contato
         </Text>
@@ -354,7 +362,9 @@ const Content = () => {
             <BsWhatsapp />
           </HStack>
         </Flex>
-        <Text mt="15px">leojn8@gmail.com</Text>
+        <Text id="email" mt="15px">
+          leojn8@gmail.com
+        </Text>
       </Flex>
     </>
   );

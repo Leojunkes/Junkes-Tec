@@ -25,27 +25,23 @@
     font-size: 93.75%;
   }
 }
+@media (max-width: 890px) {
+  html {
+    font-size: 82.5%;
+  }
+}
 
 @media (max-width: 720px) {
   html {
-    font-size: 87.5%;
+    font-size: 70.5%;
   }
 }
-@media (max-width: 600px) {
+
+@media (max-width: 580px) {
   html {
-    font-size: 80.5%;
+    font-size: 56.5%;
   }
 }
-/*@media (max-width: 480px) {
-  html {
-    font-size: 75.5%;
-  }
-}
-@media (max-width: 410px) {
-  html {
-    font-size: 55.5%;
-  }
-}*/
 @media (max-width: 480px) {
   html {
     font-size: 42.5%;
@@ -59,9 +55,12 @@
     padding-left: -15px;
   }
   #apresentation1 {
-    margin: 80px 0 0 50px;
+    margin: 80px 0 0 60px;
     font-size: 12px;
-    width: 150%;
+
+    max-width: 292px;
+    margin-left: 28px;
+    position: absolute;
   }
   #Work {
     line-height: 35px;
@@ -69,22 +68,39 @@
   #name {
     line-height: 20px;
   }
+  #sobre {
+    font-size: 18px;
+    margin-top: -35px;
+  }
+  #projetos {
+    font-size: 18px;
+  }
+
+  #divider {
+    margin-top: 240px;
+  }
+  #contato {
+    font-size: 18px;
+  }
+  #email {
+    font-size: 16px;
+  }
   #aboutMe {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
+
+    max-width: 292px;
     font-size: 12px;
-    width: 80%;
-    margin-left: 50px;
-    
+    margin: 40px 0 0 30px;
   }
-  #photoLeo{
-    margin: 15px 0 0 95px
+  #photoLeo {
+    margin: 0 auto;
   }
-  #missionLeo{
+  #missionLeo {
     margin-left: -60px;
     font-size: 12px;
   }
-  #projects{
+  #projects {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
   }
